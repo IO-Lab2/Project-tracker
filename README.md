@@ -18,7 +18,7 @@ This repository serves as the central hub for all components of the academic kno
    - [Scraper](#scraper)
    - [Stack](#stack)
 3. [Presentation](#presentation)
-4. [Website and User Guide](#website)
+4. [Website](#website)
 5. [User Guide](#user-guide)
 6. [UML Diagram](#uml-diagram)
 
@@ -99,7 +99,6 @@ A full business presentation of the project.
 
 ### [Website](https://epickaporownywarkabazwiedzyuczelni.rocks/)
 Live website is available through the link in the title.
-To view the user guide, go to user_guide.pdf in IO_Project\Project-tracker.
 
 ### [User Guide](https://www.canva.com/design/DAGcxoBG66Y/sJdgmnq2A4Bptp3-jtFGBA/view?utm_content=DAGcxoBG66Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb1ee1756a1)
 User guide is available through the link in the title.
