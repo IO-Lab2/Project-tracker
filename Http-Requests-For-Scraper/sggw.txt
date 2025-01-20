@@ -1,0 +1,58 @@
+Informacje o żądaniach HTTP do strony Baza Wiedzy SGGW:
+
+(sprawdzone dla dwóch różnych profilów, dostarczone zostały te same dane)
+
+link do BW: https://bw.sggw.edu.pl/index.seam
+
+Testy powstały na przykładzie pracowników: dr hab. inż. Leszek Chmielewski, dr hab. inz. Beata Bilska
+
+Adres do profilu danej osoby: https://bw.sggw.edu.pl/info/author/WULS4eddac9696bf44ffb6eed5354dd2d63e?aq=%40status%3APRACOWNIK*%2Cauthorprofile%2Fposition%2F%40namePL%3Aprofesor%3Bauthorprofile%2F%40possitionPL%3Aprofesor%2C%40active%3D%27true%27%2CmainDiscipline%3AWUTfef424a0094d4fc3865bb3aabd414c88%3BactivityDiscipline%2Fdiscipline%3AWUTfef424a0094d4fc3865bb3aabd414c88&r=author&ps=20&tab=&title=Profil%2Bosoby%2B%25E2%2580%2593%2BLeszek%2BChmielewski%2B%25E2%2580%2593%2BSzko%25C5%2582a%2BG%25C5%2582%25C3%25B3wna%2BGospodarstwa%2BWiejskiego%2Bw%2BWarszawie&lang=pl
+
+Adres do profilu danej osoby: https://bw.sggw.edu.pl/info/author/WULSa19b28e6606148e980a81b92cde66ceb?aq=%40status%3APRACOWNIK*%2Cauthorprofile%2Fposition%2F%40namePL%3Aadiunkt%3Bauthorprofile%2F%40possitionPL%3Aadiunkt%2C%40active%3D%27true%27%2CmainDiscipline%3AWUT0422e2f5a6e04895a72fa10a4f65a404%3BactivityDiscipline%2Fdiscipline%3AWUT0422e2f5a6e04895a72fa10a4f65a404&r=author&ps=20&tab=&title=Profil%2Bosoby%2B%25E2%2580%2593%2BBeata%2BBilska%2B%25E2%2580%2593%2BSzko%25C5%2582a%2BG%25C5%2582%25C3%25B3wna%2BGospodarstwa%2BWiejskiego%2Bw%2BWarszawie&lang=pl
+
+
+
+Każde żądanie typu post dostarcza nam numer CID - numer pracownika, który dla każdego jest inny
+
+Żądanie typu "POST":
+
+1. Sumaryczny SNIP 
+   Adres żądania : https://bw.sggw.edu.pl/info.seam?cid=250870
+
+2. Sumaryczny CiteScore
+   Adres żądania : https://bw.sggw.edu.pl/info.seam?cid=250870
+
+3. Sumaryczny IF
+   Adres żądania : https://bw.sggw.edu.pl/info.seam?cid=250870
+
+4. Sumaryczna punktacja ministerialna
+   Adres żądania : https://bw.sggw.edu.pl/info.seam?cid=250870
+
+5. Numer i link do ORCID
+   Adres żądania : https://bw.sggw.edu.pl/info.seam?cid=250870
+
+
+Żądanie typu "GET":
+
+1. Wyświetla źródło strony do Profilu Osoby
+   Adres żądania - https://bw.sggw.edu.pl/info/author/WULS4eddac9696bf44ffb6eed5354dd2d63e?aq=%40status%3APRACOWNIK*%2Cauthorprofile%2Fposition%2F%40namePL%3Aprofesor%3Bauthorprofile%2F%40possitionPL%3Aprofesor%2C%40active%3D%27true%27%2CmainDiscipline%3AWUTfef424a0094d4fc3865bb3aabd414c88%3BactivityDiscipline%2Fdiscipline%3AWUTfef424a0094d4fc3865bb3aabd414c88&r=author&ps=20&tab=&title=Profil%2Bosoby%2B%25E2%2580%2593%2BLeszek%2BChmielewski%2B%25E2%2580%2593%2BSzko%25C5%2582a%2BG%25C5%2582%25C3%25B3wna%2BGospodarstwa%2BWiejskiego%2Bw%2BWarszawie&lang=pl
+
+
+
+Żądanie które nie przyniosły żadnych informacji:
+
+1. POST - https://www.google-analytics.com/j/collect?v=1&_v=j101&a=865331055&t=pageview&_s=1&dl=https%3A%2F%2Fbw.sggw.edu.pl%2Finfo%2Fauthor%2FWULS4eddac9696bf44ffb6eed5354dd2d63e%3Faq%3D%2540status%253APRACOWNIK*%252Cauthorprofile%252Fposition%252F%2540namePL%253Aprofesor%253Bauthorprofile%252F%2540possitionPL%253Aprofesor%252C%2540active%253D%2527true%2527%252CmainDiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%253BactivityDiscipline%252Fdiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%26r%3Dauthor%26ps%3D20%26tab%3D%26title%3DProfil%252Bosoby%252B%2525E2%252580%252593%252BLeszek%252BChmielewski%252B%2525E2%252580%252593%252BSzko%2525C5%252582a%252BG%2525C5%252582%2525C3%2525B3wna%252BGospodarstwa%252BWiejskiego%252Bw%252BWarszawie%26lang%3Dpl&ul=en-us&de=UTF-8&dt=Profil%20osoby%20%E2%80%93%20Leszek%20Chmielewski%20%E2%80%93%20Szko%C5%82a%20G%C5%82%C3%B3wna%20Gospodarstwa%20Wiejskiego%20w%20Warszawie&sd=24-bit&sr=1920x1080&vp=1903x945&je=0&_u=AAGAAAABAAAAACAAI~&jid=320278671&gjid=2036721331&cid=1427373236.1687898016&tid=G-LDPGFVE036&_gid=1925116349.1730749767&_r=1&_slc=1&z=821816961
+
+2. POST - https://region1.google-analytics.com/g/collect?v=2&tid=G-LDPGFVE036&gtm=45je4au0v9124642651za200&_p=1730836412367&gcd=13l3l3l2l1l1&npa=1&dma_cps=syphamo&dma=1&tag_exp=101823848~101878899~101878944~101925629&cid=1427373236.1687898016&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.92%7CGoogle%2520Chrome%3B130.0.6723.92%7CNot%253FA_Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=1&sid=1730833884&sct=11&seg=1&dl=https%3A%2F%2Fbw.sggw.edu.pl%2Finfo%2Fauthor%2FWULS4eddac9696bf44ffb6eed5354dd2d63e%3Faq%3D%2540status%253APRACOWNIK*%252Cauthorprofile%252Fposition%252F%2540namePL%253Aprofesor%253Bauthorprofile%252F%2540possitionPL%253Aprofesor%252C%2540active%253D%2527true%2527%252CmainDiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%253BactivityDiscipline%252Fdiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%26r%3Dauthor%26ps%3D20%26tab%3D%26title%3DProfil%252Bosoby%252B%2525E2%252580%252593%252BLeszek%252BChmielewski%252B%2525E2%252580%252593%252BSzko%2525C5%252582a%252BG%2525C5%252582%2525C3%2525B3wna%252BGospodarstwa%252BWiejskiego%252Bw%252BWarszawie%26lang%3Dpl&dr=https%3A%2F%2Fbw.sggw.edu.pl%2FresultList.seam%3Faq%3D%2540status%253APRACOWNIK*%252Cauthorprofile%252Fposition%252F%2540namePL%253Aprofesor%253Bauthorprofile%252F%2540possitionPL%253Aprofesor%252C%2540active%253D%2527true%2527%252CmainDiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%253BactivityDiscipline%252Fdiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%26q%3D%26r%3Dauthor%26ps%3D20%26t%3Dsnippet%26showRel%3Dfalse%26lang%3Dpl%26pn%3D1&dt=Profil%20osoby%20%E2%80%93%20Leszek%20Chmielewski%20%E2%80%93%20Szko%C5%82a%20G%C5%82%C3%B3wna%20Gospodarstwa%20Wiejskiego%20w%20Warszawie&en=page_view&_ee=1&tfd=5961
+
+3. POST - https://region1.google-analytics.com/g/collect?v=2&tid=G-LDPGFVE036&gtm=45je4au0v9124642651za200&_p=1730836119124&gcd=13l3l3l2l1l1&npa=1&dma_cps=syphamo&dma=1&tag_exp=101823848~101878899~101878944~101899378~101925629&cid=1427373236.1687898016&ul=en-us&sr=1920x1080&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.92%7CGoogle%2520Chrome%3B130.0.6723.92%7CNot%253FA_Brand%3B99.0.0.0&uamb=0&uam=&uap=Windows&uapv=15.0.0&uaw=0&are=1&frm=0&pscdl=noapi&_s=3&sid=1730833884&sct=11&seg=1&dl=https%3A%2F%2Fbw.sggw.edu.pl%2Finfo%2Fauthor%2FWULS4eddac9696bf44ffb6eed5354dd2d63e%3Faq%3D%2540status%253APRACOWNIK*%252Cauthorprofile%252Fposition%252F%2540namePL%253Aprofesor%253Bauthorprofile%252F%2540possitionPL%253Aprofesor%252C%2540active%253D%2527true%2527%252CmainDiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%253BactivityDiscipline%252Fdiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%26r%3Dauthor%26ps%3D20%26tab%3D%26title%3DProfil%252Bosoby%252B%2525E2%252580%252593%252BLeszek%252BChmielewski%252B%2525E2%252580%252593%252BSzko%2525C5%252582a%252BG%2525C5%252582%2525C3%2525B3wna%252BGospodarstwa%252BWiejskiego%252Bw%252BWarszawie%26lang%3Dpl&dr=https%3A%2F%2Fbw.sggw.edu.pl%2FresultList.seam%3Faq%3D%2540status%253APRACOWNIK*%252Cauthorprofile%252Fposition%252F%2540namePL%253Aprofesor%253Bauthorprofile%252F%2540possitionPL%253Aprofesor%252C%2540active%253D%2527true%2527%252CmainDiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%253BactivityDiscipline%252Fdiscipline%253AWUTfef424a0094d4fc3865bb3aabd414c88%26q%3D%26r%3Dauthor%26ps%3D20%26t%3Dsnippet%26showRel%3Dfalse%26lang%3Dpl%26pn%3D1&dt=Profil%20osoby%20%E2%80%93%20Leszek%20Chmielewski%20%E2%80%93%20Szko%C5%82a%20G%C5%82%C3%B3wna%20Gospodarstwa%20Wiejskiego%20w%20Warszawie&en=user_engagement&_et=13134&tfd=294152
+
+
+
+
+
+
+
+
+
+

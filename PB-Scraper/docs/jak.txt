@@ -1,0 +1,92 @@
+STRUCTURE DESCRIPTION
+docs/ - general description of the inner workings of the scraper
+scraper/ - source code directory
+scraper/scrapy.cfg - config for scrapy
+scraper/constants.py - constants for the whole repository
+scraper/knowledge_scraper/ - scrapy project files
+scraper/utils/ - helper modules which are universal within the entire project
+scraper/scripts/ - helper modules which serve a more specific purpose
+scraper/other/ - other files
+
+scrapy automatically adds directory with scrapy.cfg to sys.path so packages in scraper/ directory can import each other.
+
+WHERE VARIABLES ARE SCRAPED FROM AND IN WHAT ORDER
+item to pipeline  <--------
+--------> pages flow
+  
+ |
+ | time flow
+ |
+\ /
+
+-----------------> organizations page
+			name - organization
+    			type - organization
+organization <----------
+
+----------------> all people pages
+			first_name - scientist
+			last_name - scientist
+			academic_title - scientist
+			position (adjunct/professor BUT/...) - scientist
+			email - scientist
+			profile_url - scientist
+			-> goto specific scientists pages
+				organizations - scientist
+				h_index_wos - bibliometrics
+				h_index_scopus - bibliometrics
+				publication_count - bibliometrics
+				ministerial_score - bibliometrics
+scientist <--------------------
+bibliometrics <----------------
+
+
+----------------> all publications pages
+			journal_type - publication
+			publication_year - publication
+			title - publication
+			-> goto specific publication pages
+				scientist_ids - publication
+				publisher - publication
+				journal - publication
+publication <-------------------
+
+We want to check any relationships between items in the database.
+If first item references a second item. Then they should be sent to pipelines in order: second -> first.
+											before    later
+
+note on organizations:
+organizations should be returned in order: parent -> child
+universities must have parent_id == None
+organizations have different types on pb website and in the database
+
+
+
+CRUCIAL COLUMNS:
+-- consider checking for them during data extraction --
+all - id UUID
+
+scientist - first_name VARCHAR(100)
+scientist - last_name VARCHAR(100)
+scientist - academic_title VARCHAR(50)
+scientist - research_area VARCHAR(255)
+scientist - profile_url (tied to id)
+
+research_area - name VARCHAR(255)
+
+bibliometrics - ministerial_score FLOAT
+bibliometrics - scientist_id UUID
+bibliometrics - publication_count INTEGER
+
+organization - name VARCHAR(255)
+organization - type organization
+organization - parent_id
+
+publication - title TEXT
+publication - author_id
+
+
+
+WORK DIVISION:
+spider - extraction and type conversion
+pipeline - validation and storage

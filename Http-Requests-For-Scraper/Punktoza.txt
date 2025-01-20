@@ -1,0 +1,23 @@
+Informacje o żadaniach HTTP do strony Punktoza
+
+Dane o konkretnych czasopismach itd. są zawarte w .json (nazwy indeksów to liczby od 0 do 17) w żądaniu typu GET
+Dla konferencji lub wydawnictwa indeksy 4,5,6,7,8,11,12,13,14,15,16,17 mają wartość null
+Oznaczenia w jsonie:
+"0" - Identyfikator wewnętrzny strony dla każdego czasopisma
+"1" - Nazwa czasopisma
+"2" - Dyscypliny/Dziedziny
+"3" - Punkty ministerialne
+"4" - ISSN - ośmiocyfrowy (w środku przecinek czyli w formacie XXXX-XXXX) identyfikator wydawnictwa w formie papierowej
+"5" - e-ISSN - ośmiocyfrowy (w środku przecinek czyli w formacie XXXX-XXXX) identyfikator wydawnictwa w formie cyfrowej 
+"6" - IF'23 - Impact Factory za rok 2023
+"7" - CS-hp'23 - znacznik najwyższego percentyla, czyli np. dla znacznika 99 oznacza to, że dane czasopismo jest w 1% topki najlepszych czasopism w danej dziedzinie
+"8" - Szczerze to nie wiem do czego służy ten identyfikator, bo wszędzie jest wpisany jako null 
+"9" - Typ punktowania pozycji (Czasopismo, konferencja lub wydawnictwo)
+"10" - Typ publikacji (Artykuł, monografia lub rozdział)
+"11" - ID w serwisie Sherpa Romeo lub NULL jeśli artykuł nie jest w bazie Sherpa Romeo
+"12" - Link do strony wydawnictwa
+"13" - Serwis w jakim zostało zindeksowane czasopismo
+"14" - Nazwa wydawcy czasopisma
+"15" - Wszędzie wpisana wartość "Scopus" czyli naukowa baza danych zawierająca informacje o pracach naukowych
+"16" - Kraj wydawcy (czasem więcej niż jeden)
+"17" - Kraj z listą serwisów w, których czasopismo jest zaindeksowane

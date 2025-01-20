@@ -1,0 +1,20 @@
+Informacje o żadaniach HTTP do strony Baza Wiedzy PW:
+
+Testowana na przykłądzie tego pracownika:
+Link do strony:"https://repo.pw.edu.pl/info/author/WUTd0453aa751ae499dbe77f6ccfa39e65f?r=author&tab=&title=Profil%2Bosoby%2B%25E2%2580%2593%2BAli%2BSoltani%2BSharif%2BAbadi%2B%25E2%2580%2593%2BPolitechnika%2BWarszawska&lang=pl"
+
+Adres http requesta: "https://repo.pw.edu.pl/info.seam?cid=127108"
+Metoda:	"POST"	
+
+givenName:	"Ali Soltani Sharif"	
+familyName:	"Abadi"
+authorAffil:	"asystent"
+phonePreviewText:	"+48 22 234 77 14"
+roomNrPreviewText:	"269"	
+Publikacje:	"35"
+Cytowania Scopus:	"9"
+Cytowania WoS:	"5"	
+SNIP:	"15,336"	
+CiteScore:	"54,48"
+MNiSW:	"1 571"
+CID:	"https://repo.pw.edu.pl/info.seam?cid=127108"

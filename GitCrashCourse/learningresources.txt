@@ -1,0 +1,44 @@
+Wszystkie komendy i workflow git w jednym prostym, przyjemnym i ładnym pdfie. Polecam każdemu przeczytać: 
+
+https://training.github.com/downloads/github-git-cheat-sheet.pdf
+
+Szybkie i zwięzłe omówienie jak robić Pull Request'y:
+
+https://www.youtube.com/watch?v=jRLGobWwA3Y&ab_channel=KeepOnCoding
+
+- Jak kontrolować to co się dodaje na githuba z naszego projektu programistycznego, 
+a to co się nie dodaje(czasami nie chcemy dodawać np. logów z debugowania, czy ogromnej wersji exe'ca z debuga itp) 
+- to jak powinno się prowadzić repo na git i co do niego wrzucać to osobny temat- 
+dla ciekawych polecam zgłębić w internecie, a dla poglądu spojrzeć na to repo jak powinna wyglądąc struktura projektu na git: 
+
+https://github.com/microsoft/terminal/tree/main
+
+i przeczytać ten artykuł:
+
+https://dev.to/pwd9000/github-repository-best-practices-23ck
+
+z tego artykułu:
+
+- Do czego służy plik .gitignore
+
+Ignoring build artifacts: Ignore files and directories that are generated during the build process, such as log files, temporary files, and build artifacts.
+Ignoring sensitive information: Ignore files and directories that contain sensitive information, such as passwords, API keys, and configuration files.
+Ignoring user-specific files: Ignore files and directories that are specific to individual users, such as editor settings, local configuration, and temporary files.
+Ignoring large files: Ignore files and directories that are large and not necessary for version control, such as media files, binary files, and archives.
+Ignoring logs and caches: Ignore files and directories that are created as part of the logging and caching process, such as log files, cache files, and temporary files.
+Ignoring test files: You can use .gitignore to ignore files and directories that are created as part of the testing process, such as test results, test logs, and test artifacts.
+
+-Teraz przede wszystkim tworzenie .gitignore
+
+https://www.freecodecamp.org/news/gitignore-file-how-to-ignore-files-and-folders-in-git/#contents
+
+-do nauki git przede wszystkim polecam materiały od Githuba
+
+https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources
+
+Wszystko powyżej jest ładnie rozpisane w jaki sposób ( na WIEEELE sposobów :-) ) można się uczyć git. Poza tym youtube pełny filmików tutoriali na każdy temat związany z gitem.
+Polecam każdemu wybranie takiej formy jaka jest przystępna dla niegu, jednak przede wszystkim to zachęcam do nauki przez praktykę. Powodzenia :-)
+
+
+
+

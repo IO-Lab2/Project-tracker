@@ -1,0 +1,37 @@
+Z mojego doświadczenia - najprostsze korzystanie z systemu kontroli wersji git ogranicza się do następujących kwestii:
+
+-> Po pierwsze pobrać git bash 
+
+-> Przejsc do lokalizacji na komputerze z projektem lub tam gdzie ma byc project za pomocą komendy "cd" i ścieżka 
+-> albo kliknąc prawym klawiszem myszy i odnaleźć w opcjach "Git Bash Here" 
+-> i wtedy Git Bash uruchomii sie w odpowiedniej lokalizacji na kompie
+
+Komendy:
+
+-> git auth -> zalogować się w git bashu do swojego konta githuba
+
+-> git clone -> z linkiem do projektu, żeby sklonować project na swoj computer 
+
+-> git pull -> przywraca nasze repozytorium na komputerze do najnowszej wersji z githuba
+
+Typowa sytuacja, że chcemy wrzucić nasze zmiany w projekcie na githuba:
+
+-> git status -> sprawdzamy jakie pliki utworzylismy, co usunelismy,co zmienilismy
+
+-> git add -A -> dodajemy wszystkie nasze zmiany
+
+-> git commit -m "Opis naszego commmit'a" -> komitujemy
+
+-> git push -> wrzucamy na githuba
+
+Dobra praktyka:
+
+-> nie robimy wszystkich zmian na branchu master/main ( jak zpushujecie nietestowane zmiany do main-a to Marek Was znajdzie )
+
+-> -> tylko jak pracujemy nad nowym feature to tworzymy nowy branch na którym pracujemy i dopiero po zakończeniu pracy nad daną funkcjonalnością, robimy PULL REQUESTA na githubie, żeby dodać naszego nowego feature do master'a/main'a
+
+Korzystamy do tego z komend:
+
+-> git branch
+-> git checkout
+-> pull request'a można przez stronkę githuba normlanie zrobić

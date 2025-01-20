@@ -1,0 +1,95 @@
+name: Stack
+
+version: '3'
+
+services:
+  reverse-proxy:
+    image: traefik:v3.2
+    ports:
+      - "80:80"
+      - "443:443"
+      #- "8080:8080"
+    networks:
+      - proxy
+    volumes:
+      - ./letsencrypt:/letsencrypt 
+      - /var/run/docker.sock:/var/run/docker.sock
+    command:
+      - "--api.dashboard=true"
+      - "--log.level=INFO"
+      - "--accesslog=true"
+      - "--api.insecure=false"
+      - "--providers.docker.network=proxy"
+      - "--providers.docker.exposedByDefault=false"
+      - "--entryPoints.web.address=:80"
+      - "--entryPoints.web.http.redirections.entrypoint.to=websecure"
+      - "--entryPoints.web.http.redirections.entrypoint.scheme=https"
+      - "--entryPoints.websecure.address=:443"
+      - "--entryPoints.websecure.asDefault=true"
+      - "--entryPoints.websecure.http.tls.certresolver=myresolver"
+      - "--certificatesresolvers.myresolver.acme.email=michal.korzeniewskiii@gmail.com"
+      - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.mydashboard.rule=Host(`traefik.epickaporownywarkabazwiedzyuczelni.rocks`)"
+      - "traefik.http.routers.mydashboard.service=api@internal"
+      #- "traefik.http.routers.mydashboard.middlewares=myauth"
+      #- "traefik.http.middlewares.myauth.basicauth.users=test:test"
+  api:
+    image: cubeofdestiny/api-image
+    networks:
+      - proxy
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    restart: always
+    labels:
+      - "traefik.enable=true" #epickaporownywarkabazwiedzyuczelni.rocks
+      - "traefik.http.routers.app.rule=Host(`api.epickaporownywarkabazwiedzyuczelni.rocks`) || Host(`www.api.epickaporownywarkabazwiedzyuczelni.rocks`)"
+      - "traefik.http.services.app.loadbalancer.server.port=8000"
+  front-end:
+    image: cubeofdestiny/front-end-image
+    networks:
+      - proxy
+    ports:
+      - "3000:3000"
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.fapp.rule=Host(`epickaporownywarkabazwiedzyuczelni.rocks`) || Host(`www.epickaporownywarkabazwiedzyuczelni.rocks`)"
+      - "traefik.http.services.fapp.loadbalancer.server.port=3000"
+      - "traefik.http.routers.fapp.entrypoints=web,websecure"
+      - "traefik.http.routers.fapp.tls=true"
+      - "traefik.http.routers.fapp.tls.certresolver=myresolver"
+  watchtower:
+    image: containrrr/watchtower
+    networks:
+      - proxy
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --interval 600
+  whoami:
+    image: traefik/whoami:v1.10.3
+    networks:
+      - proxy
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.mywhoami.rule=Host(`whoami.epickaporownywarkabazwiedzyuczelni.rocks`) || Host(`www.whoami.epickaporownywarkabazwiedzyuczelni.rocks`)
+      - traefik.http.services.mywhoami.loadbalancer.server.port=80
+      
+      # next lines are optional to redirect www to non-www
+      #- traefik.http.middlewares.mywwwredirect.redirectregex.regex=^https://www\.(.*)
+      #- traefik.http.middlewares.mywwwredirect.redirectregex.replacement=https://$${1}
+      #- traefik.http.routers.mywhoami.middlewares=mywwwredirect
+
+
+networks:
+  proxy:
+    name: proxy
+
+volumes:
+  letsencrypt:
+    name: letsencrypt
+
