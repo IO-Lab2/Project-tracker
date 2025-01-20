@@ -18,8 +18,9 @@ This repository serves as the central hub for all components of the academic kno
    - [Scraper](#scraper)
    - [Stack](#stack)
 3. [Presentation](#presentation)
-4. [Website and User Guide](#website-and-user-guide)
-5. [UML Diagram](#uml-diagram)
+4. [Website and User Guide](#website)
+5. [User Guide](#user-guide)
+6. [UML Diagram](#uml-diagram)
 
 ## Project Overview
 The project is an academic knowledge base that allows users to filter researchers from three different universities (SGGW, PW, PB) and compare them across various criteria such as publications, impact factor (IF), ministerial points, and more. The system integrates data scraping, API services, and a user-friendly front-end.
@@ -96,9 +97,12 @@ Contains configurations for running the project using Docker Compose.
 ### [Presentation](https://www.canva.com/design/DAGcCMLdB80/JZ_pXxv4UcMNm6XkfGVS7A/view?utm_content=DAGcCMLdB80&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
 A full business presentation of the project.
 
-### [Website and User Guide](https://epickaporownywarkabazwiedzyuczelni.rocks/)
+### [Website](https://epickaporownywarkabazwiedzyuczelni.rocks/)
 Live website is available through the link in the title.
 To view the user guide, go to user_guide.pdf in IO_Project\Project-tracker.
+
+### [User Guide](https://www.canva.com/design/DAGcxoBG66Y/sJdgmnq2A4Bptp3-jtFGBA/view?utm_content=DAGcxoBG66Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb1ee1756a1)
+User guide is available through the link in the title.
 
 ### [UML diagram](https://github.com/IO-Lab2/Docs/blob/dev/Uml.pdf)
 The UML model, representing the relationships in the database, can be found in the Docs Repository as either Uml.pdf or Uml.png.
