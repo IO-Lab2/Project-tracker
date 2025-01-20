@@ -26,13 +26,15 @@ The project is an academic knowledge base that allows users to filter researcher
 
 ### Key Features:
 - **Filtering:** Filter researchers by university, department, position, number of publications, IF factor, ministerial points, and more.
-- **Comparison:** Compare up to 10 researchers side by side using pie charts.
-- **Data Updates:** Automatic updates of data every 3-10 days through web scraping.
+- **Comparison:** Compare up to 10 researchers side by side.
 - **Researcher Profiles:** Access to detailed profiles and publications from each university's database.
 
 ---
 
 ## Main Repositories and Components
+
+### [Project-tracker (this)](https://github.com/IO-Lab2/Project-tracker)
+Repository serving as the central hub for all components of the project.
 
 ### [API](https://github.com/IO-Lab2/API)
 The backend API that handles data retrieval, filtering, and updates.
@@ -60,9 +62,45 @@ Documentation for the entire project, including installation guides, architectur
 
 ### [Front-End](https://github.com/IO-Lab2/front-end)
 A Next.js application for the front-end of the project, enabling filtering, searching, and comparing researchers.
-
 #### Key Features:
 - **Technologies Used:** React, Next.js, Tailwind CSS, TypeScript.
 - **Getting Started:**
   ```bash
   npm run dev
+### [GitCrashCourse](https://github.com/IO-Lab2/GitCrashCourse)
+A repository to guide the organization on how to use GitHub, with files for basic Git workflows and learning resources.
+
+### [Https-Requests-For-Scraper](https://github.com/IO-Lab2/Http-Requests-For-Scraper)
+A collection of HTTP requests to retrieve data from university websites.
+
+### [Manual-Testing-Of-Frontend](https://github.com/IO-Lab2/Manual-Testing-Of-Frontend)
+Manual testing documentation for the front-end application, ensuring proper functionality.
+#### Key Features:
+- **Test scenarios:** A table documenting various manual testing scenarios for the front-end.
+
+### [PB-Scraper](https://github.com/IO-Lab2/PB-Scraper)
+A web scraper to retrieve data from Bialystok University of Technology (PB).
+
+### [PW-Scraper](https://github.com/IO-Lab2/PW-Scraper)
+A web scraper to retrieve data from Warsaw University of Technology (PW).
+
+### [Scraper](https://github.com/IO-Lab2/Scraper)
+A web scraper to retrieve data from Warsaw University of Life Sciences (SGGW).
+
+### [Stack](https://github.com/IO-Lab2/Stack)
+Contains configurations for running the project using Docker Compose.
+#### Key Features:
+- **Docker Compose Setup:** Run the entire stack with docker-compose up -d.
+- **Configuration for Reverse Proxy, API, Watchtower, and Front-End.** 
+
+### [Presentation](https://www.canva.com/design/DAGcCMLdB80/JZ_pXxv4UcMNm6XkfGVS7A/view?utm_content=DAGcCMLdB80&utm_campaign=designshare&utm_medium=link&utm_source=viewer)
+A full business presentation of the project.
+
+### [Website and User Guide](https://epickaporownywarkabazwiedzyuczelni.rocks/)
+Live website is available through the link in the title.
+To view the user guide, go to user_guide.pdf in IO_Project\Project-tracker.
+
+### [UML diagram](https://github.com/IO-Lab2/Docs/blob/dev/Uml.pdf)
+The UML model, representing the relationships in the database, can be found in the Docs Repository as either Uml.pdf or Uml.png.
+
+
